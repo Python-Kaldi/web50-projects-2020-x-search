@@ -1,0 +1,120 @@
+$linkColor: rgb(70, 70, 70);
+$h2color: red;
+$advancedSubBackCol: blue;
+$advancedSubFrontCol: white;
+
+$serchBorder: lightgray;
+
+div {
+    font-family: Arial;
+    color: $linkColor; 
+    
+    h2 {
+        color: $h2color;
+    }
+}
+
+div.serachLink {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+
+    a  {
+        color: $linkColor;
+        padding: 3px;
+    }
+}
+
+div.searchForm {
+    position: absolute;
+    margin-top: 20px;
+    width: 100%;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+div.submit {
+    position: absolute;
+    margin-top: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+input {
+    padding: 6px;
+    position: relative;
+    left: 50%; 
+    margin-right: -50%; 
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);            
+}
+
+input[type="text"] {
+    border-color: $serchBorder;
+    border-style: solid;
+    border-radius: 6px;
+    width: 40%;       
+}
+
+input[type="submit"] {
+    background-color: $serchBorder;
+    border: hidden;
+    border-radius: 3px;
+}
+
+tr.submit {
+        position: absolute;
+        left: 50%; 
+        margin-right: -50%; 
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); 
+    }
+
+img {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    width: 20%;
+    margin-right: -50%; 
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); 
+}
+
+table.queryAdvanced {
+    width: 90%;
+    margin: 15px; 
+    border-spacing: 15px;
+    overflow-x: auto;
+
+    td.request {
+        width: 17%; 
+        min-width: 200px;       
+    }
+
+    td.input {
+        width: 40%;
+        min-width: 300px; 
+
+        input {
+            width: 100%;
+            min-width: 400;
+            margin-top: 22px;
+        }
+
+        input.bAdvancedSerach {
+            width: 180px;
+            background-color: $advancedSubBackCol;
+            color: $advancedSubFrontCol;
+            border-radius: 3px;             
+        }
+    }
+
+    td.description {
+        width: 30%;
+        min-width: 300px;
+        font-size: small;
+    }    
+}
